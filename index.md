@@ -8,8 +8,6 @@ Most of the curriculum is focused around the Python ARM Toolkit.
 :::{image} images/ARM_logo.png
 :::
 
-This demo uses MyST to showcase the example workflows from the Radar Cookbook.
-
 :::{seealso}
 # More information
 
@@ -28,7 +26,9 @@ https://projectpythia.org/
 :::{note}
 # Attribution
 
+https://doi.org/10.5281/zenodo.8075855
+
 The material for this demo is adapted from Project Pythia’s Radar Cookbook and is licensed for free and open consumption and reuse. All code is served under Apache 2.0, while all non-code content is licensed under Creative Commons BY 4.0 (CC BY 4.0). 
 
-Grover, M., Sherman, Z., Sharma, M., Ladino, A., Camron, C., & Radar Cookbook contributors. (2023). Radar Cookbook (v2023.06.23). Zenodo. https://doi.org/10.5281/zenodo.8075855
+Please check out the complete [Radar Cookbook](https://projectpythia.org/radar-cookbook) for additional examples and background material. 
 :::
