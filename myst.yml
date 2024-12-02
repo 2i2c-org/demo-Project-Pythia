@@ -1,11 +1,18 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+extends:
+  - https://raw.githubusercontent.com/2i2c-org/demo-gallery/refs/heads/main/myst.shared.yaml
 project:
   id: 7ea1a004-9dee-454c-aeca-eedfd0dc6e36
   # title:
   # description:
   # keywords: []
   # authors: []
+  jupyter:
+    binder:
+      repo: https://github.com/2i2c-org/demo-Project-Pythia
+      url: https://binder.opensci.2i2c.cloud/
+
   github: https://github.com/2i2c-org/demo-Project-Pythia
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
@@ -24,6 +31,7 @@ project:
     
 site:
   template: book-theme
-  # options:
+  options:
+    logo_text: Project Pythia Demo
   #   favicon: favicon.ico
   #   logo: site_logo.png
