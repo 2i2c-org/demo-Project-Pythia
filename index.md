@@ -1,6 +1,5 @@
 # Project Pythia - Radar Cookbook
 
-
 The [Radar Cookbook](https://projectpythia.org/radar-cookbook) from [Project Pythia](https://projectpythia.org/) 
  covers the basics of working with weather radar data in Python.
 
@@ -25,3 +24,11 @@ Project Pythia is a home for Python-centered learning resources that are _open-s
 https://projectpythia.org/
 :::
 
+
+:::{note}
+# Attribution
+
+The material for this demo is adapted from Project Pythia’s Radar Cookbook and is licensed for free and open consumption and reuse. All code is served under Apache 2.0, while all non-code content is licensed under Creative Commons BY 4.0 (CC BY 4.0). 
+
+Grover, M., Sherman, Z., Sharma, M., Ladino, A., Camron, C., & Radar Cookbook contributors. (2023). Radar Cookbook (v2023.06.23). Zenodo. https://doi.org/10.5281/zenodo.8075855
+:::

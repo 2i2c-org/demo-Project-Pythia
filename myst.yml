@@ -6,11 +6,6 @@ project:
   id: 7ea1a004-9dee-454c-aeca-eedfd0dc6e36
   title: Project Pythia - Radar Cookbook
   description: Cookbooks to demonstrate reproducible geoscientific computing
-  # keywords: []
-  authors:
-    - name: Max Grover
-    - name: Zachary Sherman
-    - name: Milind Sharma
   jupyter:
     binder:
       repo: https://github.com/2i2c-org/demo-Project-Pythia
@@ -23,14 +18,10 @@ project:
     - file: index.md
     - title: Radar Cookbook Workflows
       children:
-        - file: example-workflows/cacti-data-quality-example.ipynb
-        - file: example-workflows/echo_top_height.ipynb
-        - file: example-workflows/fastbarnes_interpolation_rhi.ipynb
-        - file: >-
-            example-workflows/interactive-radar-visualization-jmaradar-cfradial1.ipynb
-        - file: example-workflows/kdp-comparison.ipynb
         - file: example-workflows/moore-oklahoma-tornado.ipynb
-        - file: example-workflows/tracer-example.ipynb
+        - file: example-workflows/kdp-comparison.ipynb
+        - file: example-workflows/echo_top_height.ipynb
+        - file: example-workflows/interactive-radar-visualization-jmaradar-cfradial1.ipynb
     
 abbreviations:
   ARM: Atmospheric Radiation Measurement
@@ -38,4 +29,4 @@ abbreviations:
 site:
   template: book-theme
   options:
-    logo_text: Project Pythia
+    logo_text: Radar Cookbook Demo
