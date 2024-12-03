@@ -185,8 +185,8 @@ plt.xlim(-99, -96)
 plt.ylim(33.5, 36.5)
 
 # Add counties
-ax1.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax1.add_feature(USCOUNTIES,
+#                linewidth=0.5)
 
 # Setup our second axis for velocity
 ax2 = plt.subplot(122, projection=ccrs.PlateCarree())
@@ -202,8 +202,8 @@ plt.xlim(-99, -96)
 plt.ylim(33.5, 36.5)
 
 # Add counties
-ax2.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax2.add_feature(USCOUNTIES,
+#                linewidth=0.5)
 
 plt.show()
 ```
@@ -229,8 +229,7 @@ plt.xlim(-98, -97)
 plt.ylim(35, 36)
 
 # Add counties
-ax1.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax1.add_feature(USCOUNTIES, linewidth=0.5)
 
 # Setup our second axis for velocity
 ax2 = plt.subplot(122, projection=ccrs.PlateCarree())
@@ -246,8 +245,7 @@ plt.xlim(-98, -97)
 plt.ylim(35, 36)
 
 # Add counties
-ax2.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax2.add_feature(USCOUNTIES, linewidth=0.5)
 
 plt.show()
 ```
@@ -291,8 +289,7 @@ gl.xlabel_style = {'fontsize':10}
 gl.ylabel_style = {'fontsize':10}
 
 # Add counties
-ax1.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax1.add_feature(USCOUNTIES, linewidth=0.5)
 
 # Setup our second axis for velocity
 ax2 = plt.subplot(122, projection=ccrs.PlateCarree())
@@ -325,8 +322,8 @@ gl.xlabel_style = {'fontsize':10}
 gl.ylabel_style = {'fontsize':10}
 
 # Add counties
-ax2.add_feature(USCOUNTIES,
-                linewidth=0.5)
+#ax2.add_feature(USCOUNTIES, linewidth=0.5)
+
 plt.show()
 ```
 
