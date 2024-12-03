@@ -191,10 +191,16 @@ ref_hist = ds.DBZH.hvplot.hist()
 ```
 
 ## Create a Dashboard to Analyze ZDR Bias
+
+
 A common data quality check is differential reflectivity bias. This value should be around 0 for low values of horizontal reflectivity. We use a few steps here to create this visualization
 - Unstack the dataset so we are left with a single dimension - the single range gate (single points)
 - Create histograms (`.hist`) and a 2-dimensional histogram (`.hexbin`) to visualize the data
 - Stack these into single view using `gridspec`
+
+::: {attention} This final cell requires more RAM than is available on the publicly accessible binder configured for this demo.
+To launch this notebook on a binder configured with addtional memory use this [link](https://big.binder.opensci.2i2c.cloud/v2/gh/2i2c-org/demo-Project-Pythia/HEAD?labpath=examp[…]teractive-radar-visualization-jmaradar-cfradial1.ipynb) (requires authentication).
+:::
 
 ```{code-cell} ipython3
 ds = ds.stack({"gate": {"azimuth", "range"}}).reset_index("gate")
@@ -227,15 +233,8 @@ gspec
 ## Summary
 Within this notebook, we covered how to use interactive visualizations with your weather radar data, including applications to checking data quality.
 
-### What's Next?
-Next, we will continue to explore methods of cleaning and visualizing data!
-
 +++
 
 ## Resources and References
 - [Xradar documentation](https://docs.openradarscience.org/projects/xradar/en/stable/index.html)
 - [IDEAM radar data](https://registry.opendata.aws/ideam-radares/)
-
-```{code-cell} ipython3
-
-```
