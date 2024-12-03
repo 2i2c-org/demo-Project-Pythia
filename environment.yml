@@ -3,9 +3,9 @@ channels:
   - conda-forge
   - pyviz
 dependencies:
-  - python<3.12
-  - jupyter-book
+  - python=3.11
   - jupyterlab
+  - jupytext
   - matplotlib
   - cartopy
   - jupyter_server
