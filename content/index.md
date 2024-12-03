@@ -5,7 +5,7 @@ The [Radar Cookbook](https://projectpythia.org/radar-cookbook) from [Project Pyt
 
 Most of the curriculum is focused around the Python ARM Toolkit.
 
-:::{image} images/ARM_logo.png
+:::{image} ../images/ARM_logo.png
 :::
 
 :::{seealso}
