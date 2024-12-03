@@ -6,6 +6,9 @@ project:
   id: 7ea1a004-9dee-454c-aeca-eedfd0dc6e36
   title: Project Pythia - Radar Cookbook
   description: Cookbooks to demonstrate reproducible geoscientific computing
+  binder:
+      url: https://binder.opensci.2i2c.cloud/
+
   jupyter:
     binder:
       repo: https://github.com/2i2c-org/demo-Project-Pythia
@@ -27,6 +30,5 @@ abbreviations:
   ARM: Atmospheric Radiation Measurement
 
 site:
-  template: book-theme
   options:
     logo_text: Radar Cookbook Demo
