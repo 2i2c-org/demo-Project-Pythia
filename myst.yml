@@ -6,6 +6,10 @@ project:
   id: 7ea1a004-9dee-454c-aeca-eedfd0dc6e36
   title: Project Pythia - Radar Cookbook
   description: Cookbooks to demonstrate reproducible geoscientific computing
+  keywords: []
+  authors: []
+  open_access: true
+
   binder:
       url: https://binder.opensci.2i2c.cloud/
 
