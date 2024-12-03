@@ -11,12 +11,9 @@ kernelspec:
   name: python3
 ---
 
-<img src="../images/sample-nexrad-moore.png" width=600 alt="ARM Logo"></img>
-
-+++
-
 # Looking at NEXRAD Data from Moore, Oklahoma
----
+
+<img src="../images/sample-nexrad-moore.png" width=600 alt="ARM Logo"></img>
 
 +++
 

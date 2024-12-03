@@ -11,11 +11,9 @@ kernelspec:
   name: python3
 ---
 
+# Specific Differential Phase retrieval methods comparison
+
 <img src="../images/kdp_comparison.jpg" width=700 alt="KDP Comparison"></img>
-
-+++
-
-# Specific Differential Phase ($K_{DP}$) retrieval methods comparison
 
 +++
 

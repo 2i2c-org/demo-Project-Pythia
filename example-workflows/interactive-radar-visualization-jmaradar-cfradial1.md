@@ -11,8 +11,9 @@ kernelspec:
   name: python3
 ---
 
-<img src="../images/bokeh_plot_jmaradar.png" width=800 alt="Multipanel hvPlot"></img>
 # Interactive JMA Radar Visualization
+
+<img src="../images/bokeh_plot_jmaradar.png" width=800 alt="Multipanel hvPlot"></img>
 
 +++
 

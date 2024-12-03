@@ -13,6 +13,7 @@ kernelspec:
 
 # Echo top height calculation from NEXRAD PPI volume data: 
 
+
 +++
 
 An echo top is the radar indicated top of an area of precipitation. This notebook demonstrates how to calculate the echo top height (ETH) in a NEXRAD PPI volume scan to determine the maximum elevation angle at which a certain reflectivity threshold is exceeded.
