@@ -21,10 +21,10 @@ project:
     - file: index.md
     - title: Radar Cookbook Workflows
       children:
-        - file: example-workflows/moore-oklahoma-tornado.ipynb
-        - file: example-workflows/kdp-comparison.ipynb
-        - file: example-workflows/echo_top_height.ipynb
-        - file: example-workflows/interactive-radar-visualization-jmaradar-cfradial1.ipynb
+        - file: example-workflows/moore-oklahoma-tornado.md
+        - file: example-workflows/kdp-comparison.md
+        - file: example-workflows/echo_top_height.md
+        - file: example-workflows/interactive-radar-visualization-jmaradar-cfradial1.md
     
 abbreviations:
   ARM: Atmospheric Radiation Measurement
