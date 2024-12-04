@@ -17,6 +17,8 @@ kernelspec:
 
 +++
 
+![](xref:gallery#note-launcher)
+
 ## Overview
 Within this cookbook, we will detail how to create interactive plots of radar data!
 
