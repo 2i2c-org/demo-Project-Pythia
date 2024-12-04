@@ -13,6 +13,8 @@ project:
   jupyter:
     binder:
       url: https://binder.opensci.2i2c.cloud/
+  references:
+    gallery: https://2i2c.org/demo-gallery
 
   github: 2i2c-org/demo-Project-Pythia
 
