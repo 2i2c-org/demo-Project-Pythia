@@ -17,6 +17,8 @@ kernelspec:
 
 +++
 
+![](xref:gallery#note-launcher)
+
 ## Overview
    
 Within this notebook, we will cover:

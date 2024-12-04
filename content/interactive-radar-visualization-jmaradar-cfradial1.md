@@ -17,9 +17,8 @@ kernelspec:
 
 +++
 
-![](xref:gallery#note-launcher)
-
 ## Overview
+
 Within this cookbook, we will detail how to create interactive plots of radar data!
 
 1. Reading data with Xradar
@@ -49,11 +48,11 @@ hv.extension("bokeh")
 
 It is recommended that you are familiar with working with weather radar data, the core data structures, and the basics of reading in different radar datasets.
 
-| Concepts | Importance | Notes |
-| --- | --- | --- |
-| [Intro to Cartopy](https://foundations.projectpythia.org/core/cartopy/cartopy.html) | Necessary | |
-| [Xradar User Guide: Plot a PPI](https://docs.openradarscience.org/projects/xradar/en/stable/notebooks/plot-ppi.html) | Necessary | |
-| [Understanding of NetCDF](https://foundations.projectpythia.org/core/data-formats/netcdf-cf.html) | Helpful | Familiarity with metadata structure |
+| Concepts                                                                                                             | Importance | Notes                               |
+| -------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------- |
+| [Intro to Cartopy](https://foundations.projectpythia.org/core/cartopy/cartopy.html)                                  | Necessary  |                                     |
+| [Xradar User Guide: Plot a PPI](https://docs.openradarscience.org/projects/xradar/en/stable/notebooks/plot-ppi.html) | Necessary  |                                     |
+| [Understanding of NetCDF](https://foundations.projectpythia.org/core/data-formats/netcdf-cf.html)                    | Helpful    | Familiarity with metadata structure |
 
 - **Time to learn**: 30 minutes
 
@@ -76,6 +75,7 @@ kdp_file = DATASETS.fetch("Z__C_RJTD_20230801200000_RDR_JMAGPV_RS47937_Gar0p250k
 ```
 
 ### Read the data in xradar
+
 We use [xradar](https://docs.openradarscience.org/projects/xradar/en/stable/), an open-source toolkit to read weather radar data and load into the Xarray data structure. The data format here is a CF/Radial1 file, so we use the [`open_cfradial1_datatree`](https://docs.openradarscience.org/projects/xradar/en/stable/notebooks/CfRadial1.html) reader.
 
 ```{code-cell} ipython3
@@ -94,6 +94,7 @@ radar_kdp
 ```
 
 ## Creating Your First Interactive Figure with Xradar and hvPlot
+
 hvPlot is helpful tool when working with interactive visualizions! It is a tool built on top of several other packages, that we can use with Xarray.
 
 By default, this visualization plots azimuth along the y-axis and range along the y-axis. While this is desired in certain cases, we cannot gather much spatial information from this.
@@ -106,6 +107,7 @@ ref
 ```
 
 ### Refining Our Plot - Recreating a Plan Position Indicator (PPI)
+
 We instead would like to create a Plan Position Indicator (PPI) plot. Since we already georeferenced the dataset, we set x/y to be `x` and `y`, or the distance away from the radar, as well as tuning some additional parameters. We set `rasterize=True` to lazily load in the data, which renders the plot more quickly and increases resolution as we zoom in.
 
 ```{code-cell} ipython3
@@ -145,6 +147,7 @@ kdp = radar_kdp["sweep_0"].KDP.hvplot.quadmesh(x='x',
 ```
 
 ### Combining your plots into a single dashboard
+
 You can combine plots using the `+` syntax to add plots side-by-side, or `*` to add them to the same plot. For example, let's combine our reflectivity and velocity plot.
 
 ```{code-cell} ipython3
@@ -152,6 +155,7 @@ You can combine plots using the `+` syntax to add plots side-by-side, or `*` to 
 ```
 
 ## Filtering and Checking Data Quality
+
 We can also filter our data - notice the low values in both differential reflectivity and reflectivity. We can mask these out using `Xarray`!
 
 ```{code-cell} ipython3
@@ -166,6 +170,7 @@ ds
 ```
 
 ### Determine Mask Thresholds
+
 Let's determine our thresholds for filtering the data, using histograms! These are available through `hvPlot`, using the `.hvplot.hist()` extension.
 
 ```{code-cell} ipython3
@@ -175,6 +180,7 @@ ref_hist = ds.DBZH.hvplot.hist()
 ```
 
 Notice how we have very low values for both fields, which we can threshold using:
+
 - Differential Reflectivity < -5
 - Horizontal Reflectivity < -32
 
@@ -184,6 +190,7 @@ ds
 ```
 
 ### Double Check our Filtered Data
+
 Let's double check that our filtering worked - notice the new, more representative distributions!
 
 ```{code-cell} ipython3
@@ -194,8 +201,8 @@ ref_hist = ds.DBZH.hvplot.hist()
 
 ## Create a Dashboard to Analyze ZDR Bias
 
-
 A common data quality check is differential reflectivity bias. This value should be around 0 for low values of horizontal reflectivity. We use a few steps here to create this visualization
+
 - Unstack the dataset so we are left with a single dimension - the single range gate (single points)
 - Create histograms (`.hist`) and a 2-dimensional histogram (`.hexbin`) to visualize the data
 - Stack these into single view using `gridspec`
@@ -233,10 +240,12 @@ gspec
 ```
 
 ## Summary
+
 Within this notebook, we covered how to use interactive visualizations with your weather radar data, including applications to checking data quality.
 
 +++
 
 ## Resources and References
+
 - [Xradar documentation](https://docs.openradarscience.org/projects/xradar/en/stable/index.html)
 - [IDEAM radar data](https://registry.opendata.aws/ideam-radares/)
