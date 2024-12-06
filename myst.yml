@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 extends:
-  - https://raw.githubusercontent.com/2i2c-org/demo-gallery/refs/heads/main/myst.shared.yaml
+  - https://raw.githubusercontent.com/2i2c-org/demo-shared-content/refs/heads/main/myst.shared.yaml
 project:
   id: 7ea1a004-9dee-454c-aeca-eedfd0dc6e36
   title: Project Pythia - Radar Cookbook
@@ -14,7 +14,7 @@ project:
     binder:
       url: https://binder.opensci.2i2c.cloud/
   references:
-    gallery: https://2i2c.org/demo-gallery
+    shared: https://2i2c.org/demo-shared-content
 
   github: 2i2c-org/demo-Project-Pythia
 

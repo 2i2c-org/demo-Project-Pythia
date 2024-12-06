@@ -17,7 +17,7 @@ kernelspec:
 
 +++
 
-![](xref:gallery#note-launcher)
+![](xref:shared#note-launcher)
 
 ## Overview
    
