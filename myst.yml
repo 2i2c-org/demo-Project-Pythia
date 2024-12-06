@@ -28,8 +28,8 @@ project:
         - file: content/echo_top_height.md
         - file: content/interactive-radar-visualization-jmaradar-cfradial1.md
     
-abbreviations:
-  ARM: Atmospheric Radiation Measurement
+  abbreviations:
+    ARM: Atmospheric Radiation Measurement
 
 site:
   options:

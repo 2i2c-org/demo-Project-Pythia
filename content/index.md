@@ -8,8 +8,8 @@ Most of the curriculum is focused around the Python ARM Toolkit.
 :::{image} ../images/ARM_logo.png
 :::
 
-:::{seealso}
-# More information
+:::{seealso} More information
+:name: seealso-info-pythia
 
 # Project Pythia
 
