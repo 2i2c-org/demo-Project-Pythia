@@ -12,7 +12,7 @@ project:
 
   jupyter:
     binder:
-      url: https://binder.projectpythia.org/
+      url: https://binder.opensci.2i2c.cloud/
   references:
     shared: https://2i2c.org/demo-shared-content
 
