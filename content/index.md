@@ -5,10 +5,10 @@ The [Radar Cookbook](https://projectpythia.org/radar-cookbook) from [Project Pyt
 
 Most of the curriculum is focused around the Python ARM Toolkit.
 
-:::{image} ../images/ARM_logo.png
-:::
+```{image} ../images/ARM_logo.png
+```
 
-:::{seealso} More information
+```{seealso} More information
 :name: seealso-info-pythia
 
 # Project Pythia
@@ -20,10 +20,10 @@ Project Pythia is the education working group for Pangeo and is an educational r
 Project Pythia is a home for Python-centered learning resources that are _open-source_, _community-owned_, _geoscience-focused_, and _high-quality_.
 
 https://projectpythia.org/
-:::
+```
 
 
-:::{note}
+```{note}
 # Attribution
 
 https://doi.org/10.5281/zenodo.8075855
@@ -31,4 +31,4 @@ https://doi.org/10.5281/zenodo.8075855
 The material for this demo is adapted from Project Pythia’s Radar Cookbook and is licensed for free and open consumption and reuse. All code is served under Apache 2.0, while all non-code content is licensed under Creative Commons BY 4.0 (CC BY 4.0). 
 
 Please check out the complete [Radar Cookbook](https://projectpythia.org/radar-cookbook) for additional examples and background material. 
-:::
+```

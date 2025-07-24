@@ -207,9 +207,9 @@ A common data quality check is differential reflectivity bias. This value should
 - Create histograms (`.hist`) and a 2-dimensional histogram (`.hexbin`) to visualize the data
 - Stack these into single view using `gridspec`
 
-::: {attention} This final cell requires more RAM than is available on the publicly accessible binder configured for this demo.
+``` {attention} This final cell requires more RAM than is available on the publicly accessible binder configured for this demo.
 To launch this notebook on a binder configured with addtional memory use this [link](https://big.binder.opensci.2i2c.cloud/v2/gh/2i2c-org/demo-Project-Pythia/HEAD?labpath=examp[…]teractive-radar-visualization-jmaradar-cfradial1.ipynb) (requires authentication).
-:::
+```
 
 ```{code-cell} ipython3
 ds = ds.stack({"gate": {"azimuth", "range"}}).reset_index("gate")
