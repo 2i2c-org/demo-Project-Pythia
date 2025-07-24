@@ -5,6 +5,7 @@ channels:
 dependencies:
   - python=3.11
   - jupyterlab
+  - jupyterlab-myst
   - jupytext
   - matplotlib
   - cartopy
@@ -22,6 +23,6 @@ dependencies:
   - s3fs>=2024.3.1
   - pip
   - pip:
-    - fast-barnes-py
-    - git+https://github.com/vlouf/eth_radar.git
-    - open-radar-data>=0.1.2
+      - fast-barnes-py
+      - git+https://github.com/vlouf/eth_radar.git
+      - open-radar-data>=0.1.2
